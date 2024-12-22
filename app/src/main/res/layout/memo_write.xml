@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:text="제목:"
+        android:textSize="24sp"
+        android:textColor="#333333" />
+    <EditText
+        android:id="@+id/memoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제목을 입력하세요"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        />
+    <Button
+        android:id="@+id/findBookBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="18sp"
+        android:text="책 선택하기"
+        android:textColor="#ffffff"
+        android:backgroundTint="#6200EE"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/memoBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="선택한 책:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif" />
+    <EditText
+        android:id="@+id/memoPageNumber"
+        android:inputType="text"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        android:autofillHints="no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="몇 페이지 인가요?"/>
+
+    <EditText
+        android:id="@+id/memoContent"
+        android:autofillHints="no"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:background="@android:drawable/edit_text"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        android:hint="인상깊었던 내용이 무엇인가요?"
+        android:textSize="16sp"
+        android:scrollbars="vertical" />
+    <Button
+        android:id="@+id/memoSubmitBtn"
+        android:layout_gravity="center"
+        android:text="확인"
+        android:backgroundTint="#6200EE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

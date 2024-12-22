@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- 앱의 첫 화면 타이틀 -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="책길따라"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- 내 서재로 이동 버튼 -->
+    <Button
+        android:id="@+id/go_to_library_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 서재로 이동" />
+
+    <Button
+        android:id="@+id/go_to_memo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="독서 메모 이동" />
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    책 제목 입력 필드-->
+    <TextView
+        android:id="@+id/txtBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="책 제목"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edtBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="책 제목을 입력하세요"
+        android:inputType="text" />
+
+    <!--    저자 입력 필드-->
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저자"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edtAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="저자를 입력하세요"
+        android:inputType="text" />
+
+    <!--    장르 입력 필드-->
+    <TextView
+        android:id="@+id/txtGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장르"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edtGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="장르를 입력하세요"
+        android:inputType="text" />
+
+    <!--    읽기 시작한 날짜 입력 필드-->
+    <TextView
+        android:id="@+id/txtStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="읽기 시작한 날짜"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edtStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="YYYY-MM-DD"
+        android:inputType="date" />
+
+    <!--    완독날짜 입력 필드-->
+    <TextView
+        android:id="@+id/txtEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="완독 날짜"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edtEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="YYYY-MM-DD"
+        android:inputType="date" />
+
+    <!--    독서 상태-->
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="독서 상태"
+        android:textSize="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--    총 독서 시간 (타이머에서 불러오는건가)-->
+
+    <!--    완료 버튼-->
+    <Button
+        android:id="@+id/btnBookRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="완료"
+        android:layout_marginTop="20dp" />
+
+    <!--    독서 메모 (따로 뺀다면 안 넣어도 될듯?)-->
+
+</LinearLayout>
